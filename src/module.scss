@@ -14,3 +14,9 @@
   // fix https://stackoverflow.com/questions/20566710/overflowhidden-displayinline-block-moves-text-upwards
   vertical-align: bottom;
 }
+
+%overflow-inline-block-fix {
+  overflow: hidden;
+  // fix https://stackoverflow.com/questions/20566710/overflowhidden-displayinline-block-moves-text-upwards
+  vertical-align: bottom;
+}
