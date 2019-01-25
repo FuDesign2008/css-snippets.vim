@@ -1,26 +1,30 @@
 {
-  "name": "fu-snippets",
+  "name": "css-snippets.vim",
   "version": "1.0.0",
-  "description": "fu-snippets",
+  "description": "css-snippets.vim",
   "main": "temp.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FuDesign2008/fu-snippets.git"
+    "url": "git+https://github.com/FuDesign2008/css-snippets.vim.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/FuDesign2008/fu-snippets/issues"
+    "url": "https://github.com/FuDesign2008/css-snippets.vim/issues"
   },
-  "homepage": "https://github.com/FuDesign2008/fu-snippets#readme",
+  "homepage": "https://github.com/FuDesign2008/css-snippets.vim#readme",
   "devDependencies": {
-    "eslint": "^4.16.0",
+    "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.8.0",
-    "prettier": "^1.10.2"
+    "eslint-plugin-import": "^2.15.0",
+    "prettier": "^1.16.1",
+    "stylelint": "^9.10.1",
+    "stylelint-config-recommended": "^2.1.0",
+    "stylelint-config-recommended-scss": "^3.2.0",
+    "stylelint-scss": "^3.5.1"
   }
 }
