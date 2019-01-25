@@ -1,0 +1,20 @@
+
+extends scss
+
+snippet ellip "%ellipsis for block style"
+%ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+endsnippet
+
+snippet ellipsis "%ellipsis fro inline-block style"
+%ellipse-inline-block {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  // fix https://stackoverflow.com/questions/20566710/overflowhidden-displayinline-block-moves-text-upwards
+  vertical-align: bottom;
+}
+endsnippet

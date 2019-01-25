@@ -8,7 +8,7 @@ module.exports = {
   singleQuote: true,
   trailingComma: 'all',
   bracketSpacing: true,
-  tabWidth: 4,
+  tabWidth: 2,
   // apply different configuration to different files
   overrides: [
     {
