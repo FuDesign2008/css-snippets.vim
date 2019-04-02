@@ -1,0 +1,58 @@
+extends scss
+
+snippet media "media query in file"
+@media screen and (max-device-width: 480px) and (min-device-width: 320px) {
+    // TODO
+}
+endsnippet
+
+snippet mediaimport "media query with import"
+@import url("tinyScreen.scss") screen and (max-device-width: 480px) and (min-device-width: 320px);
+endsnippet
+
+
+snippet media "media query template in file"
+
+@mixin for-size($range) {
+  $phone-upper-boundary: 600px;
+  $tablet-portrait-upper-boundary: 900px;
+  $tablet-landscape-upper-boundary: 1200px;
+  $desktop-upper-boundary: 1800px;
+
+  @if $range == phone-only {
+    @media screen and (max-device-width: #{$phone-upper-boundary - 1}) { @content; }
+  } @else if $range == tablet-portrait-up {
+    @media screen and ((min-device-width: $phone-upper-boundary) { @content; }
+  } @else if $range == tablet-landscape-up {
+    @media screen and ((min-device-width: $tablet-portrait-upper-boundary) { @content; }
+  } @else if $range == desktop-up {
+    @media screen and ((min-device-width: $tablet-landscape-upper-boundary) { @content; }
+  } @else if $range == big-desktop-up {
+    @media screen and ((min-device-width: $desktop-upper-boundary) { @content; }
+  }
+}
+
+// usage
+.my-box {
+  padding: 10px;
+
+  @include for-size(desktop-up) {
+    padding: 20px;
+  }
+}
+
+
+// global setting
+
+img {
+  max-width: 100%;
+  height: auto;
+  -ms-interpolation-mode: bicubic;
+}
+
+object {
+  max-width: 100%;
+}
+
+
+endsnippet
